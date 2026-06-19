@@ -288,113 +288,20 @@ flowchart TD
 
 ## Water Cement Ratio vs Strength (Conforming to IS 10262)
 
-<svg width="900" height="620" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    svg { max-width: 100%; height: auto; }
-    text { font-family: Arial, sans-serif; fill: #111; }
-    .grid { stroke: #999; stroke-width: 1; }
-    .axis { stroke: #000; stroke-width: 2; }
-    .curve { fill: none; stroke: #111; stroke-width: 3; }
-    .label { font-size: 16px; font-weight: bold; }
-    .small { font-size: 14px; }
-    @media (max-width: 600px) {
-      text { font-size: 12px; }
-      .label { font-size: 13px; }
-      .small { font-size: 11px; }
-    }
-  </style>
+<img width="584" height="554" alt="image" src="https://github.com/user-attachments/assets/89bd5f1d-f95c-4075-8fae-5920520c2365" />
 
-  <rect width="100%" height="100%" fill="white"/>
+**FIG 1. RELATIONSHIP BETWEEN FREE WATER CEMENT RATIO AND 28 DAYS COMPRESSIVE STRENGTHS OF CONCRETE FOR CEMENTS OF VARIOUS EXPECTED 28 DAYS COMPRESSIVE STRENGTHS**
 
-  <text x="450" y="35" text-anchor="middle" font-size="22" font-weight="bold">
-    IS 10262 – Free Water-Cement Ratio vs 28-Day Compressive Strength
-  </text>
+Curve 1 : for expected 28 days compressive strength of 33 and < 43 N/mm2
 
-  <!-- Plot area -->
-  <rect x="110" y="70" width="650" height="400" fill="none" stroke="#000" stroke-width="2"/>
+Curve 2 : for expected 28 days compressive strength of 43 and < 53 N/mm2
 
-  <!-- Grid vertical x = 0.25 to 0.65 -->
-  <line class="grid" x1="110" y1="70" x2="110" y2="470"/>
-  <line class="grid" x1="191.25" y1="70" x2="191.25" y2="470"/>
-  <line class="grid" x1="272.5" y1="70" x2="272.5" y2="470"/>
-  <line class="grid" x1="353.75" y1="70" x2="353.75" y2="470"/>
-  <line class="grid" x1="435" y1="70" x2="435" y2="470"/>
-  <line class="grid" x1="516.25" y1="70" x2="516.25" y2="470"/>
-  <line class="grid" x1="597.5" y1="70" x2="597.5" y2="470"/>
-  <line class="grid" x1="678.75" y1="70" x2="678.75" y2="470"/>
-  <line class="grid" x1="760" y1="70" x2="760" y2="470"/>
+Curve 3 : for expected 28 days compressive strength of 53 N/mm2 and above
 
-  <!-- Grid horizontal y = 0 to 80 -->
-  <line class="grid" x1="110" y1="470" x2="760" y2="470"/>
-  <line class="grid" x1="110" y1="420" x2="760" y2="420"/>
-  <line class="grid" x1="110" y1="370" x2="760" y2="370"/>
-  <line class="grid" x1="110" y1="320" x2="760" y2="320"/>
-  <line class="grid" x1="110" y1="270" x2="760" y2="270"/>
-  <line class="grid" x1="110" y1="220" x2="760" y2="220"/>
-  <line class="grid" x1="110" y1="170" x2="760" y2="170"/>
-  <line class="grid" x1="110" y1="120" x2="760" y2="120"/>
-  <line class="grid" x1="110" y1="70" x2="760" y2="70"/>
-
-  <!-- Axis labels -->
-  <text x="435" y="530" text-anchor="middle" font-size="17">
-    Free Water-Cement Ratio
-  </text>
-
-  <text x="35" y="270" text-anchor="middle" font-size="17" transform="rotate(-90 35 270)">
-    28-Day Compressive Strength of Concrete, N/mm²
-  </text>
-
-  <!-- X values -->
-  <text x="110" y="495" text-anchor="middle" class="small">0.25</text>
-  <text x="191.25" y="495" text-anchor="middle" class="small">0.30</text>
-  <text x="272.5" y="495" text-anchor="middle" class="small">0.35</text>
-  <text x="353.75" y="495" text-anchor="middle" class="small">0.40</text>
-  <text x="435" y="495" text-anchor="middle" class="small">0.45</text>
-  <text x="516.25" y="495" text-anchor="middle" class="small">0.50</text>
-  <text x="597.5" y="495" text-anchor="middle" class="small">0.55</text>
-  <text x="678.75" y="495" text-anchor="middle" class="small">0.60</text>
-  <text x="760" y="495" text-anchor="middle" class="small">0.65</text>
-
-  <!-- Y values -->
-  <text x="90" y="475" text-anchor="end" class="small">0</text>
-  <text x="90" y="425" text-anchor="end" class="small">10</text>
-  <text x="90" y="375" text-anchor="end" class="small">20</text>
-  <text x="90" y="325" text-anchor="end" class="small">30</text>
-  <text x="90" y="275" text-anchor="end" class="small">40</text>
-  <text x="90" y="225" text-anchor="end" class="small">50</text>
-  <text x="90" y="175" text-anchor="end" class="small">60</text>
-  <text x="90" y="125" text-anchor="end" class="small">70</text>
-  <text x="90" y="75" text-anchor="end" class="small">80</text>
-
-  <!-- Curves -->
-  <path class="curve" d="M110 170 C190 235, 275 285, 355 325 C440 365, 595 415, 760 445"/>
-  <path class="curve" d="M110 125 C190 195, 275 250, 355 290 C445 335, 600 390, 760 420"/>
-  <path class="curve" d="M110 95 C190 160, 275 215, 355 250 C450 300, 600 360, 760 395"/>
-
-  <!-- Curve labels -->
-  <text x="220" y="350" class="label">Curve 1</text>
-<line x1="290" y1="345" x2="390" y2="340"
-      stroke="#111" stroke-width="2"
-      marker-end="url(#arrow)"/>
-
-  <text x="520" y="275" class="label">Curve 2</text>
-<line x1="500" y1="280" x2="430" y2="300"
-      stroke="#111" stroke-width="2"
-      marker-end="url(#arrow)"/>
-      
-  <text x="420" y="180" class="label">Curve 3</text>
-<line x1="410" y1="185" x2="350" y2="245"
-      stroke="#111" stroke-width="2"
-      marker-end="url(#arrow)"/>
-
-  <!-- Notes -->
-  <text x="110" y="565" class="small">
-    Curve 1: Expected 28-day compressive strength of 33 and &lt; 43 N/mm²
-  </text>
-  <text x="110" y="588" class="small">
-    Curve 2: Expected 28-day compressive strength of 43 and &lt; 53 N/mm²
-  </text>
-  <text x="110" y="611" class="small">
-    Curve 3: Expected 28-day compressive strength of 53 N/mm² and above
-  </text>
-</svg>
+**NOTES**
+```
+1 In the absence of data on actual 28 days compressive strength of cement, the curves 1, 2 and 3 may be used for OPC 33, OPC 43 and
+OPC 53, respectively.
+2 While using PPC/PSC, the appropriate curve as per the actual strength may be utilized. In the absence of the actual 28 days compressive
+strength data, curve 2 may be utilized.
+```
